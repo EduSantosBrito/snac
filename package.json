@@ -5,8 +5,12 @@
     "main": "./dist/main.js",
     "scripts": {
         "start": "node ./dist/main.js",
-        "tsc": "tsc"
+        "tsc": "tsc",
+        "prepublishOnly": "npm run tsc"
     },
+    "files": [
+        "./dist"
+    ],
     "keywords": [],
     "author": "",
     "license": "ISC",
