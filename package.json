@@ -1,6 +1,6 @@
 {
-    "name": "snac-tmp",
-    "version": "1.0.2",
+    "name": "snac",
+    "version": "1.0.3",
     "description": "",
     "main": "./dist/main.js",
     "scripts": {
