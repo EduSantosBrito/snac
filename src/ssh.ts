@@ -4,7 +4,7 @@ import { ISSHConnection, ISSHConnectionParams } from '.';
 
 class SSHConnection implements ISSHConnection {
     connect(params: ISSHConnectionParams): Promise<{ exec: (command: String, parameter?: any[]) => Promise<any> }> {
-        return NodeSSH.connect(params);
+        return new NodeSSH().connect(params);
     }
 }
 

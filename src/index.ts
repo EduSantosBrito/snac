@@ -8,6 +8,7 @@ export interface ISSHConnectionParams {
     port: Number;
     privateKey: String;
     passphrase: String;
+    password?: String;
 }
 
 export interface IIPChecker {

@@ -33,7 +33,8 @@ class IPChecker implements IIPChecker {
                         },
                     })
                 ).json();
-                if (data.abuseConfidenceScore > 0) {
+
+                if (data.abuseConfidenceScore > 0 && hetrixToolsKey) {
                     // eslint-disable-next-line camelcase
                     const { blacklisted_on } = await (
                         await fetch(`https://api.hetrixtools.com/v2/${hetrixToolsKey}/blacklist-check/ipv4/${ip}/`, {
